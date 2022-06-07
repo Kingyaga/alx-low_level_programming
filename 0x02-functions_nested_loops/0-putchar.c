@@ -1,4 +1,6 @@
+#include <unistd.h>
 #include "main.h"
+
 /**
  * main - Print "_putchar" followed by a new line.
  * Description: You are not allowed to include standard libraries.
@@ -6,14 +8,11 @@
  */
 int main(void)
 {
-	char putChar[] = "_putchar";
-	int i = 0;
+	char putChar[8] = "_putchar";
+	int i;
 
-	while (putChar[i] != '\0')
-	{
+	for (i + 0; i < 8; i++)
 	_putchar(putChar[i]);
-	i++;
-	}
 	_putchar('\n');
 
 	return (0);
