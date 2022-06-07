@@ -7,7 +7,7 @@
  */
 void print_alphabet(void)
 {
-    int alp = 0;
+int alp = 0;
 
 	while (alp < 26)
 {
