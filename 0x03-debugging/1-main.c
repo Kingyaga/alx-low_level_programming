@@ -13,6 +13,7 @@ int i;
 
 	i = 0;
 /**
+*\\o/\n - Print info bout infinite loop
  * while (i < 10)
  * {
  * putchar(i);
