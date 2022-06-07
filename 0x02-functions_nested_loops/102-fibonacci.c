@@ -1,21 +1,32 @@
+#include "main.h"
 #include <stdio.h>
-
 /**
- * main - Entry Point
- * Return:0
+ * main - prints first 50 numbers of the fibonacci sequence
+ * Return: 0
  */
 int main(void)
 {
-int n = 1024, i, sum;
+int i, n;
+long f1, f2, next;
 
-	sum = 0;
+	f1 = 1;
+	f2 = 2;
+	n = 50;
+
 	for (i = 0; i < n; i++)
 {
-	if (i % 3 == 0 || i % 5 == 0)
+	if (i == 49)
 {
-	sum += i;
+	printf("%lu", f1);
+}
+	else
+{
+	printf("%lu, ", f1);
+	next = f1 + f2;
+	f1 = f2;
+	f2 = next;
 }
 }
-	printf("%d\n", sum);
+	printf("\n");
 	return (0);
 }
