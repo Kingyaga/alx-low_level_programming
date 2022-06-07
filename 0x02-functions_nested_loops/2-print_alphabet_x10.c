@@ -2,7 +2,7 @@
 
 /**
  * main - Print 10x the alphabet followed by a new line.
- * Description: You can only use _putchar twice.
+ *  print_alphabet_x10 - Entry Point
  * Return: 0
  */
 void print_alphabet_x10(void)
