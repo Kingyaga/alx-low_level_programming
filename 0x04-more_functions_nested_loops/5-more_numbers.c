@@ -1,22 +1,25 @@
 #include "main.h"
 /**
- * more_numbers - printing rubbish.
- * Return: void.
+ * more_numbers - Entry Point
+ * Return:numbers
  */
 void more_numbers(void)
 {
-	int i = 0, j;
+int i, j, c;
 
-	while (i < 10)
+	for (i = 0; i < 10; i++)
 {
-	j = 0;
+	for (j = 0; j <= 14; j++)
+{
+	c = j;
 
-	while (j <= 14)
+	if (c > 9)
 {
-	_putchar('0' + j);
-	j++;
+	_putchar('1');
+	c = j % 10;
 }
-	i++;
+	_putchar('0' + c);
 }
 	_putchar('\n');
+}
 }
