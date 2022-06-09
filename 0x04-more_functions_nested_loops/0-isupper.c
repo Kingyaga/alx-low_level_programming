@@ -6,5 +6,5 @@
  */
 int _isupper(int c)
 {
-	return (((c > 96 && c < 123)) ? 0 : 1);
+	return (((c > 64 && c < 91)) ? 1 : 0);
 }
