@@ -1,18 +1,23 @@
-#include "main.h"
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
 /**
- * _strcpy - Entry Point
- * @dest : destination character
- * @src : source character
- * Return:pointer to dest
- */
-char *_strcpy(char *dest, char *src)
+  * main - generates random passwords for 101-crackme
+  * Return: zero
+  */
+int main(void)
 {
-	int i = -1;
+	int sum;
+	char c;
 
-	do {
-		i++;
-		dest[i] = src[i];
-	} while (src[i] != '\0');
-
-	return (dest);
+	srand(time(NULL));
+	while (sum <= 2645)
+	{
+		c = rand() % 128;
+		sum += c;
+		putchar(c);
+	}
+	putchar(2772 - sum);
+	return (0);
 }
