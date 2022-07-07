@@ -1,10 +1,10 @@
 /*
  * File: 0-sum_them_all.c
- * Auth: Tolulope Fakunle
- */
+ * Auth: Obiajulu Yaga
 
 #include "variadic_functions.h"
 #include <stdarg.h>
+ */
 
 /**
  * sum_them_all - Returns the sum of all its paramters.
